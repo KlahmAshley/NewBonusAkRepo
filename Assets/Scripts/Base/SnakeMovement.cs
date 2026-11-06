@@ -1,6 +1,7 @@
-using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
 
 public class SnakeMovement : MonoBehaviour
 {
@@ -9,11 +10,20 @@ public class SnakeMovement : MonoBehaviour
     private Vector2Int gridMoveDirection;
     private Vector2Int gridPosition;
 
+    public TMP_Text fruitCounter;
+    public int collected = 0;
+
     private void Awake()
     {
         gridPosition = new Vector2Int(0, 0);
         gridMoveDirection = new Vector2Int(1, 0);
 
+    }
+
+
+    private void Start()
+    {
+        fruitCounter.text = "Score:" + collected;
     }
 
     private void Update()
@@ -45,6 +55,8 @@ public class SnakeMovement : MonoBehaviour
         if (collision.CompareTag("Apple"))
         {
             Destroy(gameObject);
+            collected++;
+            fruitCounter.text = "Score:" + collected;
         }
     }
 }
