@@ -8,10 +8,14 @@
 ---
 ### Description
 -Manager scripts inherit from singleton
+
 -Things i need to access like prefabs are public to edit in unity other things are private so they arent in the inspector 
 
+
 ## UML Diagram
-<!-- Attach your UML diagram here -->
+<img width="300" height="500" alt="Untitled" src="https://github.com/user-attachments/assets/ca4724be-235e-41a1-b256-5ca127c52230" />
+
+
 ---
 # Singleton Pattern
 ---
