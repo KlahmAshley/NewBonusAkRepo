@@ -1,16 +1,8 @@
 using UnityEngine;
 
-public class IFruit : MonoBehaviour
+public interface IFruit
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public void AssignFruit(GameObject fruit, Vector2 point);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5440207277355047755}
   - component: {fileID: 7065762513638487353}
+  - component: {fileID: 6148512412311413705}
   m_Layer: 0
   m_Name: Apple
-  m_TagString: Untagged
+  m_TagString: Apple
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87,3 +88,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6148512412311413705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8695501132717437208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e022748ab9571ab4c9bf9b5ed2acc528, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnA: {x: 2, y: 2}
+  apple: {fileID: 8695501132717437208}

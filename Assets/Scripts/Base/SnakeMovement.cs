@@ -38,4 +38,13 @@ public class SnakeMovement : MonoBehaviour
         transform.position = new Vector3(gridPosition.x, gridPosition.y);
 
     }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Apple"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }

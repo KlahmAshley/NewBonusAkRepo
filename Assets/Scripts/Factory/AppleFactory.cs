@@ -1,16 +1,9 @@
 using UnityEngine;
 
-public class AppleFactory : MonoBehaviour
-{
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+public class AppleFactory : Factory
+{   public override IFruit SpawnFruit(GameObject fruitPrefab)
     {
-        
+        return new Apple();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

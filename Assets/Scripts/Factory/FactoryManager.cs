@@ -1,31 +1,36 @@
 using System.Collections;
 using UnityEngine;
 
-public class FactoryManager : MonoBehaviour
+public class FactoryManager : Singleton<FactoryManager>
 {
-/*
     private Factory factory;
 
 
-    public GameObject prefabA;
-    public Vector3 spawnA;
+    public GameObject applePrefab;
+    public Vector2 spawnA;
 
 
     void Start()
     {
-       // StartCoroutine(Spawner());
+
+
+        factory = new AppleFactory();
+        IFruit a = factory.SpawnFruit(applePrefab);
+        a.AssignFruit(applePrefab, spawnA);
+
+
+
+        // StartCoroutine(Spawner());
 
     }
 
 
-    IEnumerator Spawner()
+    /*IEnumerator Spawner()
     {
         while (true)
         {
-           factory = new FactoryA();
-           IItem b = factory.SpawnBullet(prefabA);
-           b.AssignBullet(prefabA, spawnA);
-           yield return new WaitForSeconds(.5f);
+          
+          // yield return new WaitForSeconds(.5f);
         }
     }
 */

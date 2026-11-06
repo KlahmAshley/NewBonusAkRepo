@@ -1,16 +1,19 @@
 using UnityEngine;
 
-public class Apple : MonoBehaviour
+public class Apple : MonoBehaviour, IFruit
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public Vector2 SpawnA;
+    public GameObject apple;
+
+    public void AssignFruit(GameObject apple, Vector2 SpawnA)
     {
-        
+        GameObject bullet = GameObject.Instantiate(apple, SpawnA, Quaternion.identity);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        Destroy(gameObject);
     }
+
+
 }
