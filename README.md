@@ -5,14 +5,16 @@
 ### Student Number : 100963908
 ---
 # Object Oriented Programming
----
+
 ### Description
 -Manager scripts inherit from singleton
 
 -Things i need to access like prefabs are public to edit in unity other things are private so they arent in the inspector 
 
+-Polymorphism from IFruit to Apple as apple is changing it to take the apple prefab not generic fruit 
 
 ## UML Diagram
+
 <img width="300" height="500" alt="Untitled" src="https://github.com/user-attachments/assets/ca4724be-235e-41a1-b256-5ca127c52230" />
 
 
@@ -21,19 +23,26 @@
 ---
 ### Purpose
 Audio Manager, we only want one dont want multiple of the same audios playing at the same time
+
 Factory Manager don't want same fruits spawning in same location, doubling points etc. would get confusing 
+
 -->
 ### Implementation
 singleton base class that check and destorys if more then 1. Audio and factory manager inherit
+
 ---
 # Factory Pattern
 ---
 ### Purpose
+
 Spawn different fruits in a clean way, makes it able to be used in future easily to add more fruits or have them give bonuses
+
 ### Implementation
 Apple factory inherits from the abstract factory, apple factory creates apple which apple inherits form the fruit interface and changes it so it spawns apple in place of just fruit prefab 
+
 ---
 # References
 ---
 CODE FROM https://www.youtube.com/watch?v=0vFucqblH-g for movement
+
 Singleton base is from class
